@@ -1,0 +1,400 @@
+body {
+    margin: 0;
+}
+
+/* NAvBar */
+.navbar {
+
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0px 14px 0px #0000001b;
+    z-index: 999;
+    background-color: white;
+
+}
+
+.navbar .container {
+    width: 91%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 10px;
+    gap: 30px;
+}
+
+.container {
+    width: 91%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 10px;
+    gap: 30px;
+    padding: 60px 0;
+
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    padding-left: 0%;
+
+}
+
+.navbar li {
+    list-style: none;
+}
+
+/* Home */
+
+.Home {
+    background-color: #e1e1e1;
+    height: 100vh;
+
+}
+
+img {
+    width: 100%;
+}
+
+.hometxt {
+    width: 40%;
+
+}
+
+.hometxt h2 {
+    font-family: "Amatic SC";
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.hometxt p {
+    margin-block: 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4f4f5a;
+}
+
+.homeimg {
+    width: 40%;
+}
+
+.Home .container {
+    padding-top: 100px;
+}
+
+.chefs {
+    text-align: center;
+}
+
+.chef {
+    border-radius: 15px;
+    transition: .5s;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.chef:hover {
+    transform: scale(1.05);
+}
+
+.chef:hover .social-box {
+    transform: scale(1.05);
+    left: 80%;
+}
+
+.chefs h2 {
+    padding-top: 60px;
+}
+
+.social-box {
+    position: absolute;
+    bottom: 80%;
+    left: 120%;
+    transition: .5s;
+
+}
+
+/* Gallery */
+
+.gallery {
+    text-align: center;
+    background-color: #e1e1e1;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menuitem {
+    border: white 3px solid;
+
+}
+
+.menuimg img {
+    display: block;
+}
+
+.menuitem {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #00000096;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: .5s;
+}
+
+.menuitem:hover .layer {
+    transform: translateY(0);
+    transition: .5s;
+}
+
+/* Contact */
+
+.contact {
+    text-align: center;
+}
+
+.maps {
+    width: 100%;
+}
+
+.contact .container {
+
+    width: 91%;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+
+}
+
+.contactus {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 40px 40px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Address Email-"
+        "Call- Hours";
+}
+
+
+.info {
+    width: 100%;
+}
+
+.icon {
+    min-width: 3.125rem;
+    min-height: 3.125rem;
+    background-color: tomato;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.contactbox {
+    background-color: hsl(0, 0%, calc(100% - 4%));
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.contactbox h2 {
+    color: #7d7d7d;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.contactbox p {
+    padding: 0;
+    margin: 0;
+}
+
+.contactbox .fa-regular,
+.contactbox .fa-solid {
+    color: white;
+}
+
+.contact-form {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.form-group input[type="text"] .form-group input[type="email"] {
+    margin-right: 0;
+}
+
+textarea {
+    height: 150px;
+}
+
+
+
+form button {
+    padding: 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    display: block;
+
+}
+
+form button:hover {
+    background-color: tomato;
+}
+
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    background-color: black;
+    color: #fff;
+    text-align: left;
+    align-items: start;
+}
+
+.footer-item {
+    padding: 20px;
+
+}
+
+.item1 {
+    flex: 1;
+}
+
+.item2 {
+    flex: 2;
+}
+
+.item3 {
+    flex: 1;
+}
+
+.item1top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item1top .fa-solid {
+    background-color: tomato;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.item1 h3 {
+    text-align: center;
+
+}
+
+.subscribe {
+    display: flex;
+    width: 100%;
+    gap: 5px;
+}
+
+.emails {
+    flex-grow: 1;
+    width: 100%;
+
+}
+
+.subscribe button {
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    background: tomato;
+    color: white;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.625rem;
+
+}
+
+.list li {
+    width: 45%;
+    list-style: none;
+    padding: 3px 0;
+    transition: .3s;
+    margin: 10px;
+
+
+}
+
+.list {
+    padding: 0;
+}
+
+.list li:hover {
+    transform: translateX(10px);
+    background-color: #222;
+}
+
+.item3txt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item3txt .fa-solid {
+    color: tomato;
+}
+
+
