@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mealify</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet" />
+        
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,15 +22,15 @@
     <div class="navbar">
         <div class="container">
             <div class="logo">
-                <h2>Mealify.</h2>
+                <h2>Mealify<span>.</span></h2>
             </div>
 
             <div class="navlist">
                 <ul>
-                    <li>Home</li>
-                    <li>Chefs</li>
-                    <li>Gallery</li>
-                    <li>Contact</li>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#chef"><li>Chefs</li></a>
+                    <a href="#gallery"><li>Gallery</li></a>
+                    <a href="#contact"><li>Contact</li></a>
                 </ul>
             </div>
             <i class="fa-solid fa-moon"></i>
@@ -39,26 +40,36 @@
 
     </div>
     <!-- Home -->
-    <div class="Home">
+    <div class="Home" id="home">
         <div class="container">
             <div class="hometxt">
                 <h2>Enjoy Your Healthy <br>
                     Delicious Food</h2>
                 <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum
                     quaerat.</p>
+                <div class="btngroup">
+                    <a class="btn first">Book a Table</a>
+                    <a href="https://youtube.com" target="_blank" class="video-btn"></a>
+                    <div class="iconss">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    Watch a Video
+                    </a>
 
+                </div>
             </div>
             <div class="homeimg">
-                <img src="imgs/hero-img.png" alt="">
+                <img src="imgs/hero-img.png" alt="" class="table">
             </div>
 
 
         </div>
     </div>
     <!-- Chief -->
-    <div class="chefs">
-        <h2>Chefs</h2>
-        <h1>Our Proffesional Chefs</h1>
+    <div class="chefs" id="chef">
+        <div class="headtxt"><h2>Chefs</h2>
+        <h1>Our <span>Proffesional Chefs</span></h1></div>
+        
         <div class="container">
             <div class="chef">
                 <img src="imgs/chef-1.png" alt="">
@@ -83,11 +94,7 @@
                             <i class="fa-brands fa-instagram"></i>
                         </a>
                     </li>
-                    <li>
-                        <a href="https://linkedin.com" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </li>
+                    
                 </ul>
             </div>
             <div class="chef">
@@ -113,11 +120,7 @@
                             <i class="fa-brands fa-instagram"></i>
                         </a>
                     </li>
-                    <li>
-                        <a href="https://linkedin.com" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </li>
+                    
                 </ul>
             </div>
             <div class="chef">
@@ -143,11 +146,7 @@
                             <i class="fa-brands fa-instagram"></i>
                         </a>
                     </li>
-                    <li>
-                        <a href="https://linkedin.com" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </li>
+                    
                 </ul>
             </div>
         </div>
@@ -155,9 +154,10 @@
 
 
     </div>
-    <div class="gallery">
-        <h2>GALLERY</h2>
-        <h1>Check Our Gallery</h1>
+    <div class="gallery" id="gallery">
+        <div class="headtxt"><h2>GALLERY</h2>
+        <h1>Check <span>Our Gallery</span></h1></div>
+        
         <div class="container">
             <div class="column">
                 <div class="menuitem">
@@ -220,11 +220,13 @@
                     </div>
                 </div>
                 <div class="menuitem">
-                    <div class="menuimg"><img src="imgs/meal-5.jpg" alt=""></div>
+                    <div class="menuimg"><img src="imgs/meal-6.jpg" alt=""></div>
                     <div class="layer">
-                        <h2>Crispy Fried Chicken
+                        <h2>Lyulya kebab
+
                         </h2>
-                        <p>Golden brown chicken legs with a crunchy coating and juicy meat
+                        <p>Tender and juicy skewers of ground lamb or beef, flavored with aromatic spices and herbs
+
                         </p>
                     </div>
                 </div>
@@ -232,9 +234,10 @@
         </div>
     </div>
     <!-- contact -->
-    <div class="contact">
-        <h3>CONTACT</h3>
-        <h2>Need Help ? Contact Us</h2>
+    <div class="contact" id="contact">
+        <div class="headtxt"><h3>CONTACT</h3>
+        <h1>Need Help ? <span>Contact Us</span></h1></div>
+        
         <div class="container">
             <div class="maps"><iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2872.8759177992547!2d-73.99675844912419!3d40.71286221535585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a2665c2cc5d%3A0xede58acf7633b27a!2sGolden%20Unicorn!5e0!3m2!1sen!2seg!4v1712099613221!5m2!1sen!2seg"
@@ -313,6 +316,28 @@
                 <p>Mealify is a restaurant landing page that offers a delicious dining experience to its customers.</p>
                 <h3>Social Media</h3>
                 <hr>
+                <ul class="footer-social">
+                    <li>
+                        <a href=""" >
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" >
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" >
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="footer-item item2">
                 <h3>Subscribe our Newsletter
